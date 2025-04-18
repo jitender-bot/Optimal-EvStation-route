@@ -1,0 +1,89 @@
+body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.stations-list{
+    width: 20%;
+    height: 100vh;
+    overflow: auto;
+    background: whitesmoke;
+}
+#map { 
+    width: 80%;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+}
+
+.stations-list .heading{
+    background: #22e922;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+    height: 20px;
+    border-left: 0;
+    background: rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb{
+    background: #22e922;
+    border-radius: 0;
+}
+
+.stations-list ul.list{
+    padding: 0 1rem;
+    list-style-type: none;
+
+}
+
+.stations-list .shop-item{
+    margin: 1rem 0;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding-bottom: 1rem;
+}
+
+.stations-list li:last-child .shop-item{
+    border: none;
+}
+
+.stations-list .shop-item a{
+    text-decoration: none;
+    font-size: 20px;
+    color: #22e922;
+    font-weight: 700;
+}
+
+.stations-list .shop-item p{
+    font-size: 16px;
+    color: #404040;
+}
+
+.leaflet-popup-content-wrapper{
+    padding: 0;
+    overflow: hidden;
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content{
+    margin: 0;
+
+}
+
+.leaflet-popup-content-wrapper h4{
+    padding: 16px;
+    background: #22e922;
+    color: #fff;
+    font-size: 16px;
+}
+
+.leaflet-popup-content-wrapper p{
+    padding: 0 16px;
+    font-size: 14px;
+    margin-bottom: 14px;
+}
